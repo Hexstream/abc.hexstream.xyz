@@ -1,0 +1,58 @@
+main {
+    margin-top: 0;
+}
+
+#realms {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#realms #HexstreamSoft {
+    font-size: 1.5em;
+    padding-top: 0.4em;
+}
+
+#realms #HexstreamSoft .description {
+    font-size: 1.5em;
+    margin-top: -0.25em;
+}
+
+#realms #Hexstream-Entertainment {
+    font-size: 0.75em;
+}
+
+#realms #Hexstream-Entertainment .description {
+    font-size: 2em;
+}
+
+#realms > a {
+    padding: 1em 2em;
+    border: medium solid black;
+    border-radius: 3rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #FFCC99;
+}
+
+#realms a:hover, #realms a:focus {
+    background: #FFDD99;
+    outline-style: none;
+}
+
+#realms > a h1 {
+    font-family: "Kaushan Script", serif;
+    font-size: 4em;
+    letter-spacing: 0.15em;
+    margin-top: 0;
+}
+
+#realms > a .description {
+    font-family: "Kaushan Script", serif;
+    margin: 0em auto;
+}
+
+#realms > a + a {
+    margin-top: 5em;
+}

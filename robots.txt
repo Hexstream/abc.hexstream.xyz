@@ -1,0 +1,4 @@
+Sitemap: http://www.hexstream.net/sitemap.xml
+
+User-agent: *
+Disallow: /error-pages/
