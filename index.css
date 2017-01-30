@@ -56,3 +56,19 @@ main {
 #realms > a + a {
     margin-top: 5em;
 }
+
+#twitter-link {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 1em;
+    border: medium solid transparent;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 2rem;
+}
+
+#twitter-link:hover {
+    background: #ECE0A5;
+    border-color: initial;
+}
