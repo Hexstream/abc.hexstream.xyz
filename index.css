@@ -63,16 +63,23 @@ main {
     z-index: 3;
     top: 0;
     left: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    margin: 0;
+}
+
+#account-links ul {
+    display: flex;
+    flex-flow: column;
+    flex: none;
     margin: 0;
     opacity: 0.5;
 }
 
-#account-links:hover {
+#account-links ul:hover {
     opacity: 1;
-}
-
-#account-links ul {
-    margin: 0;
 }
 
 #account-links ul li {
@@ -95,11 +102,6 @@ main {
     background-origin: content-box;
     background-position: 50% 50%;
     background-size: 100%;
-}
-
-#account-links ul li:first-child .account-link {
-    border-top: none;
-    border-radius: 0 0 1rem 0;
 }
 
 #account-links #twitter-link {
