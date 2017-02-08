@@ -57,18 +57,89 @@ main {
     margin-top: 5em;
 }
 
-#twitter-link {
+
+#account-links {
     position: fixed;
-    right: 0;
-    bottom: 0;
-    padding: 1em;
-    border: medium solid transparent;
-    margin-right: 0.5em;
-    margin-bottom: 0.5em;
-    border-radius: 2rem;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    margin: 0;
+    opacity: 0.5;
 }
 
-#twitter-link:hover {
-    background: #ECE0A5;
+#account-links:hover {
+    opacity: 1;
+}
+
+#account-links ul {
+    margin: 0;
+}
+
+#account-links ul li {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin: 0;
+}
+
+#account-links .account-link {
+    display: block;
+    width: 5em;
+    height: 5em;
+    padding: 1.25em;
+    border: medium solid transparent;
+    border-left: none;
+    border-radius: 0 1rem 1rem 0;
+    text-indent: -1000em;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: 50% 50%;
+    background-size: 100%;
+}
+
+#account-links ul li:first-child .account-link {
+    border-top: none;
+    border-radius: 0 0 1rem 0;
+}
+
+#account-links #twitter-link {
+    background-image: url("https://global.hexstreamsoft.com/images/logos/twitter.svg");
+
+}
+
+#account-links #github-link {
+    background-image: url("https://global.hexstreamsoft.com/images/logos/github.svg");
+}
+
+#account-links #discord-link {
+    background-image: url("https://global.hexstreamsoft.com/images/logos/discord.svg");
+    background-size: 107%;
+}
+
+#account-links .account-link:hover {
+    background-color: #ECE0A5;
     border-color: initial;
+}
+
+#account-links .account-name {
+    display: none;
+    font-size: x-large;
+    margin-left: 0.5em;
+}
+
+#account-links .account-link:hover + .account-name, #account-links ul li:target .account-name, #account-links ul li:target .ok {
+    display: block;
+}
+
+#account-links .ok {
+    display: none;
+    margin-left: 0.5em;
+    border: thin solid black;
+    padding: 0.1em 0.2em;
+    color: black;
+    text-decoration: none;
+}
+
+#account-links .ok:hover {
+    background-color: #ECE0A5;
 }
