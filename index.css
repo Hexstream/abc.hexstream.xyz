@@ -298,7 +298,7 @@ section {
 
 }
 
-@media (min-width: 40em) and (min-aspect-ratio: 16/10) and (max-aspect-ratio: 70/27) {
+@media (min-width: 35em) and (min-aspect-ratio: 16/10) and (max-aspect-ratio: 70/27) {
     /* We have a ton of horizontal space, but not much vertical space, so size things according to available height instead of width.
        Do not activate this mode if the height is insufficient and the text would thus be rendered illegible. */
     #page-header h1 {
