@@ -1,36 +1,113 @@
+html {
+    display: flex;
+    flex-flow: column;
+    justify-content: stretch;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    flex: 1 0;
+    overflow-x: initial;
+}
+
+body > * {
+    flex: none;
+}
+
 main {
-    margin-top: 0;
+    margin: auto 0;
+}
+
+#page-header {
+    margin: 0;
+}
+
+#page-header h1 {
+    font-size: 8vw;
+}
+
+@media (min-width: 30em) {
+    /* The page title can afford to be smaller while still being legible. */
+    #page-header h1 {
+        font-size: 6vw;
+    }
+}
+
+#last-updated {
+    position: relative;
+    order: 1;
+    display: table;
+    margin: 0.75em auto;
+    opacity: 0.4;
+    white-space: nowrap;
+}
+
+#last-updated:hover {
+    opacity: 1;
+}
+
+#last-updated:after {
+    top: initial;
+    bottom: 100%;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    margin: 0;
 }
 
 #realms {
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: center;
+    justify-content: stretch;
+}
+
+#realms > a + a {
+    margin-top: 1em;
 }
 
 #realms #HexstreamSoft {
-    font-size: 1.5em;
+    font-size: 2.5vw;
     padding-top: 0.4em;
 }
 
 #realms #HexstreamSoft .description {
-    font-size: 1.5em;
+    font-size: 2.3em;
     margin-top: -0.25em;
 }
 
+@media (min-width: 30em) {
+    /* The font size is big enough that we can make the HexstreamSoft description smaller while still being legible.
+       (It is desirable for the description to be smaller than the title, since we can afford it.) */
+    #realms #HexstreamSoft .description {
+        font-size: 1.65em;
+        margin-top: -0.5em;
+    }
+
+}
+
 #realms #Hexstream-Entertainment {
-    font-size: 0.75em;
+    font-size: 1.25vw;
 }
 
 #realms #Hexstream-Entertainment .description {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 #realms > a {
     padding: 1em 2em;
     border: medium solid black;
-    border-radius: 3rem;
+    border-radius: 5vw;
     text-align: center;
     text-decoration: none;
     background-color: #FFCC99;
@@ -53,26 +130,19 @@ main {
     margin: 0em auto;
 }
 
-#realms > a + a {
-    margin-top: 5em;
-}
-
 
 #account-links {
-    position: fixed;
-    z-index: 3;
     top: 0;
     left: 0;
-    height: 100%;
     display: flex;
     justify-content: center;
-    flex-flow: column;
-    margin: 0;
+    flex-flow: row;
+    margin: 1.25vw 0 0;
 }
 
 #account-links ul {
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     flex: none;
     margin: 0;
     opacity: 0.5;
@@ -83,6 +153,7 @@ main {
 }
 
 #account-links ul li {
+    position: relative;
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -91,12 +162,11 @@ main {
 
 #account-links .account-link {
     display: block;
-    width: 5em;
-    height: 5em;
-    padding: 1.25em;
+    width: 11vw;
+    height: 11vw;
+    padding: 2.35vw;
     border: medium solid transparent;
-    border-left: none;
-    border-radius: 0 1rem 1rem 0;
+    border-radius: 1rem;
     text-indent: -1000em;
     background-repeat: no-repeat;
     background-origin: content-box;
@@ -115,7 +185,8 @@ main {
 
 #account-links #discord-link {
     background-image: url("https://global.hexstreamsoft.com/images/logos/discord.svg");
-    background-size: 107%;
+    background-size: 110%;
+    background-position: 50% -10%;
 }
 
 #account-links .account-link:hover {
@@ -125,17 +196,27 @@ main {
 
 #account-links .account-name {
     display: none;
-    font-size: x-large;
+    position: absolute;
+    left: 100%;
+    font-size: 2.5vw;
+    background-color: white;
     margin-left: 0.5em;
 }
 
-#account-links .account-link:hover + .account-name, #account-links ul li:target .account-name, #account-links ul li:target .ok {
+#account-links .account-link:hover + .account-name, #account-links ul li:target .account-name {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+#account-links ul li:target .ok {
     display: block;
 }
 
 #account-links .ok {
     display: none;
     margin-left: 0.5em;
+    font-size: smaller;
     border: thin solid black;
     padding: 0.1em 0.2em;
     color: black;
@@ -144,4 +225,147 @@ main {
 
 #account-links .ok:hover {
     background-color: #ECE0A5;
+}
+
+@media (max-width: 16em) {
+    /* Get desperate about a legible page title. Increase font size and break it into 2 lines. */
+    #page-header h1 {
+        font-size: 16vw;
+        line-height: 1.2em;
+    }
+
+    /* To ensure legibility, use almost the full width for "HexstreamSoft",
+       and make the HexstreamSoft description bigger (use 2 lines for it). */
+    #realms > a h1 {
+        font-size: 4.5em;
+    }
+
+    #realms #HexstreamSoft {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #realms #HexstreamSoft .description {
+        font-size: 3.5em;
+        margin-top: 0.3em;
+        line-height: 1.1em;
+        margin-bottom: 0.25em;
+    }
+
+    #realms #Hexstream-Entertainment {
+        font-size: 2vw;
+        max-width: -moz-min-content;
+        max-width: min-content;
+    }
+
+    #realms #Hexstream-Entertainment h1 {
+        line-height: 1.2em;
+    }
+
+    #account-links .account-link {
+        width: 20vw;
+        height: 20vw;
+    }
+
+}
+
+@media (max-width: 10em) {
+    /* Making the description legible requires desperate measures. */
+    #realms #HexstreamSoft .description {
+        font-size: 4.5em;
+        margin-top: 0.4em;
+    }
+
+    #last-updated {
+        font-size: 11vw;
+    }
+
+    #last-updated:after {
+        font-size: 9vw;
+    }
+}
+
+@media (max-aspect-ratio: 4/3) {
+    /* We've got enough vertical space, so add some margins. */
+    #realms {
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+    }
+
+    #realms > a + a {
+        margin-top: 1.5vh;
+    }
+
+}
+
+@media (min-width: 40em) and (min-aspect-ratio: 16/10) and (max-aspect-ratio: 70/27) {
+    /* We have a ton of horizontal space, but not much vertical space, so size things according to available height instead of width.
+       Do not activate this mode if the height is insufficient and the text would thus be rendered illegible. */
+    #page-header h1 {
+        font-size: 9vh;
+    }
+
+    #realms > a {
+        border-radius: 7.5vh;
+    }
+
+    #realms #HexstreamSoft {
+        font-size: 3.75vh;
+    }
+
+    #realms #Hexstream-Entertainment {
+        font-size: 1.875vh;
+    }
+
+    #account-links .account-link {
+        width: 16.5vh;
+        height: 16.5vh;
+        padding: 3.525vh;
+    }
+
+    #last-updated {
+        position: absolute;
+        font-size: 0.7em;
+        top: 0;
+        right: 0;
+        margin-right: 0.5em;
+    }
+
+    #last-updated:after {
+        top: 100%;
+        bottom: initial;
+        justify-content: flex-end;
+    }
+
+}
+
+@media (max-width: 6em) {
+    /* We can't even display "HexstreamSoft" legibly using the full width, so give up. */
+    html {
+        background-color: black;
+        background-image: url("css/images/owl-of-disapproval.png");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
+    }
+
+    html:after {
+        content: "Y U NO WIDER??";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 20vw;
+        line-height: 1.2em;
+        text-align: center;
+        font-weight: bold;
+        color: red;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        background-color: black;
+    }
+
+    body {
+        display: none;
+    }
 }
