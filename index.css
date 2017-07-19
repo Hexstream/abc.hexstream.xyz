@@ -43,6 +43,7 @@ main {
     margin: 0.75em auto;
     opacity: 0.4;
     white-space: nowrap;
+    z-index: 3;
 }
 
 #last-updated:hover {
