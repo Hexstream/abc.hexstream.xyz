@@ -3,6 +3,7 @@ html {
     flex-flow: column;
     justify-content: stretch;
     min-height: 100%;
+    height: initial;
 }
 
 body {
@@ -19,6 +20,10 @@ body > * {
 
 main {
     margin: auto 0;
+}
+
+main section p, main section > * > li {
+    overflow-x: initial;
 }
 
 #page-header {
@@ -38,9 +43,9 @@ main {
 
 #last-updated {
     position: relative;
+    align-items: center;
     order: 1;
-    display: table;
-    margin: 0.75em auto;
+    margin: 0.75em 0;
     opacity: 0.4;
     white-space: nowrap;
     z-index: 3;
@@ -53,8 +58,8 @@ main {
 #last-updated:after {
     top: initial;
     bottom: 100%;
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
     left: 0;
     right: 0;
     text-align: center;
@@ -63,6 +68,7 @@ main {
 }
 
 section {
+    padding: 0;
     margin: 0;
 }
 
@@ -344,7 +350,7 @@ section {
     /* We can't even display "HexstreamSoft" legibly using the full width, so give up. */
     html {
         background-color: black;
-        background-image: url("css/images/owl-of-disapproval.png");
+        background-image: url("https://global.hexstreamsoft.com/css/images/owl-of-disapproval.png");
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: contain;
