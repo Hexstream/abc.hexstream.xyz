@@ -1,0 +1,40 @@
+main section p, main section pre, main section > * > li {
+    overflow-x: initial;
+}
+
+
+main section > ul {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    margin-top: 1em;
+}
+
+main section > ul > li + li {
+    margin-top: 0;
+}
+
+main article {
+    background: #ECECEC;
+    border: thin solid gray;
+    padding: 0.3em 0.5em 0;
+    margin: 1em;
+}
+
+main article h1 {
+    font-size: xx-large;
+    margin-top: 0;
+    margin-bottom: 0em;
+}
+
+@media (max-width: 34em) {
+    main article h1 {
+        font-size: 5.5vw;
+    }
+}
+
+main article p {
+    line-height: 1.4em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+}
