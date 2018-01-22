@@ -15,21 +15,43 @@ main section > ul > li + li {
 }
 
 main article {
+    position: relative;
     background: #ECECEC;
     border: thin solid gray;
     padding: 0.3em 0.5em 0;
-    margin: 1em;
+    margin: 2em 1em 1em;
 }
 
 main article h1 {
     font-size: xx-large;
     margin-top: 0;
-    margin-bottom: 0em;
+    margin-bottom: -0.2rem;
 }
 
-@media (max-width: 34em) {
+main article .domain-name {
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: 0.2em;
+    opacity: 0.6;
+}
+
+br.advisory {
+    display: none;
+}
+
+@media (max-width: 35.25em) {
     main article h1 {
-        font-size: 5.5vw;
+        font-size: 5.4vw;
+    }
+
+    br.advisory {
+        display: initial;
+    }
+}
+
+@media (max-width: 27.5em) {
+    main article h1 {
+        font-size: x-large;
     }
 }
 
@@ -37,4 +59,8 @@ main article p {
     line-height: 1.4em;
     margin-top: 0.6em;
     margin-bottom: 0.6em;
+}
+
+.emoji {
+    white-space: nowrap;
 }
