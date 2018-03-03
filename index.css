@@ -80,7 +80,7 @@ section {
 }
 
 #realms > a + a {
-    margin-top: 1em;
+    margin-top: 1.25vw;
 }
 
 #realms #HexstreamSoft {
@@ -109,6 +109,10 @@ section {
 
 #realms #Hexstream-Entertainment .description {
     font-size: 3em;
+}
+
+#realms #Hexstream-Misc {
+    font-size: 0.75vw;
 }
 
 #realms > a {
@@ -269,6 +273,10 @@ section {
         line-height: 1.2em;
     }
 
+    #realms #Hexstream-Misc {
+        font-size: 1.2vw;
+    }
+
     #account-links .account-link {
         width: 20vw;
         height: 20vw;
@@ -322,6 +330,21 @@ section {
 
     #realms #Hexstream-Entertainment {
         font-size: 1.875vh;
+    }
+
+    #realms #Hexstream-Misc {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        font-size: 0.95vh;
+        margin-right: 1.5vh;
+        margin-bottom: 1.5vh;
+        z-index: 1;
+        opacity: 0.5;
+    }
+
+    #realms #Hexstream-Misc:hover {
+        opacity: 1;
     }
 
     #account-links .account-link {
