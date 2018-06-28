@@ -186,16 +186,16 @@ section {
 }
 
 #account-links #twitter-link {
-    background-image: url("https://global.hexstreamsoft.com/images/logos/twitter.svg");
+    background-image: url("https://non-free.hexstream.xyz/global.hexstreamsoft.com/images/logos/twitter.svg");
 
 }
 
 #account-links #github-link {
-    background-image: url("https://global.hexstreamsoft.com/images/logos/github.svg");
+    background-image: url("https://non-free.hexstream.xyz/global.hexstreamsoft.com/images/logos/github.svg");
 }
 
 #account-links #discord-link {
-    background-image: url("https://global.hexstreamsoft.com/images/logos/discord.svg");
+    background-image: url("https://non-free.hexstream.xyz/global.hexstreamsoft.com/images/logos/discord.svg");
     background-size: 110%;
     background-position: 50% -10%;
 }
