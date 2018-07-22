@@ -1,4 +1,4 @@
 Sitemap: https://abc.hexstream.xyz/sitemap.xml
 
 User-agent: *
-Disallow: /error-pages/
+Disallow: /special/
