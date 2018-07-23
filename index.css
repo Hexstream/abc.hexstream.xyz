@@ -126,8 +126,8 @@ section {
     opacity: 0.2;
 }
 
-#realms #all:hover {
-    background-color: #FFCC99;
+#realms #all:hover, #realms #all:focus {
+    background-color: #FFDD99;
     opacity: 1;
 }
 
