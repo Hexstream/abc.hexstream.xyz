@@ -111,8 +111,24 @@ section {
     font-size: 3em;
 }
 
-#realms #Hexstream-Misc {
+#realms .cornerable {
     font-size: 0.75vw;
+}
+
+#realms #all {
+    color: transparent;
+    background-image: url("images/globe.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-origin: content-box;
+    background-color: transparent;
+    opacity: 0.2;
+}
+
+#realms #all:hover {
+    background-color: #FFCC99;
+    opacity: 1;
 }
 
 #realms > a {
@@ -273,7 +289,7 @@ section {
         line-height: 1.2em;
     }
 
-    #realms #Hexstream-Misc {
+    #realms .cornerable {
         font-size: 1.2vw;
     }
 
@@ -332,19 +348,27 @@ section {
         font-size: 1.875vh;
     }
 
-    #realms #Hexstream-Misc {
+    #realms .cornerable {
         position: fixed;
-        right: 0;
         bottom: 0;
         font-size: 0.95vh;
-        margin-right: 1.5vh;
         margin-bottom: 1.5vh;
         z-index: 1;
         opacity: 0.5;
     }
 
-    #realms #Hexstream-Misc:hover {
+    #realms .cornerable:hover {
         opacity: 1;
+    }
+
+    #realms #Hexstream-Misc {
+        right: 0;
+        margin-right: 1.5vh;
+    }
+
+    #realms #all {
+        left: 0;
+        margin-left: 1.5vh;
     }
 
     #account-links .account-link {
