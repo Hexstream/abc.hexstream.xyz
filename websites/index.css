@@ -28,11 +28,46 @@ main article h1 {
     margin-bottom: -0.2rem;
 }
 
-main article .domain-name {
+main article .domain-name,
+main article .github {
     position: absolute;
     bottom: 100%;
     margin-bottom: 0.2em;
     opacity: 0.6;
+}
+
+main article .github {
+    right: 0;
+    opacity: 0.3;
+}
+
+main article .github:hover {
+    opacity: 1;
+}
+
+main article .github > a {
+    display: flex;
+    flex-flow: row;
+    align-items: stretch;
+}
+
+main article .github > a:before {
+    content: "";
+    flex: none;
+    position: relative;
+    width: 1em;
+    background-image: url("https://non-free.hexstream.xyz/global.hexstreamsoft.com/images/logos/github.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+main article .github > a:after {
+    content: "​"; /* Zero width space */
+}
+
+main article .github > a > span {
+    display: none;
 }
 
 br.advisory {
