@@ -192,7 +192,7 @@ section {
     width: 11vw;
     height: 11vw;
     padding: 2.35vw;
-    border: medium solid transparent;
+    border: medium solid white; /* Should be transparent, but Chrome 71 is stupid. */
     border-radius: 1rem;
     text-indent: -1000em;
     background-repeat: no-repeat;
