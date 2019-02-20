@@ -1,81 +1,9 @@
-main section p, main section pre, main section > * > li {
-    overflow-x: initial;
-}
-
-
-main section > ul {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0;
-    margin-top: 1em;
-}
-
-main section > ul > li + li {
-    margin-top: 0;
-}
-
-main article {
-    position: relative;
-    background: #ECECEC;
-    border: thin solid gray;
-    padding: 0.3em 0.5em 0;
-    margin: 2em 1em 1em;
-}
-
-main article h1 {
-    font-size: xx-large;
-    margin-top: 0;
-    margin-bottom: -0.2rem;
-}
-
-main article .domain-name,
-main article .github {
-    position: absolute;
-    bottom: 100%;
-    margin-bottom: 0.2em;
-    opacity: 0.6;
-}
-
-main article .github {
-    right: 0;
-    opacity: 0.2;
-}
-
-main article .github:hover {
-    opacity: 1;
-}
-
-main article .github > a {
-    display: flex;
-    flex-flow: row;
-    align-items: stretch;
-}
-
-main article .github > a:before {
-    content: "";
-    flex: none;
-    position: relative;
-    width: 1em;
-    background-image: url("https://non-free.hexstream.xyz/global.hexstreamsoft.com/images/logos/github.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-}
-
-main article .github > a:after {
-    content: "​"; /* Zero width space */
-}
-
-main article .github > a > span {
-    display: none;
-}
-
 br.advisory {
     display: none;
 }
 
 @media (max-width: 35.25em) {
-    main article h1 {
+    .cards .card h1 {
         font-size: 5.4vw;
     }
 
@@ -85,13 +13,7 @@ br.advisory {
 }
 
 @media (max-width: 27.5em) {
-    main article h1 {
+    .cards .card h1 {
         font-size: x-large;
     }
-}
-
-main article p {
-    line-height: 1.4em;
-    margin-top: 0.6em;
-    margin-bottom: 0.6em;
 }
