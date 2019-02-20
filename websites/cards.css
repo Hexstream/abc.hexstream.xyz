@@ -28,46 +28,11 @@
     margin-bottom: -0.2rem;
 }
 
-.cards .card .domain-name,
-.cards .card .github {
+.cards .card .hoisted {
     position: absolute;
     bottom: 100%;
     margin-bottom: 0.2em;
     opacity: 0.6;
-}
-
-.cards .card .github {
-    right: 0;
-    opacity: 0.2;
-}
-
-.cards .card .github:hover {
-    opacity: 1;
-}
-
-.cards .card .github > a {
-    display: flex;
-    flex-flow: row;
-    align-items: stretch;
-}
-
-.cards .card .github > a:before {
-    content: "";
-    flex: none;
-    position: relative;
-    width: 1em;
-    background-image: url("https://non-free.hexstream.xyz/global.hexstreamsoft.com/images/logos/github.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-}
-
-.cards .card .github > a:after {
-    content: "​"; /* Zero width space */
-}
-
-.cards .card .github > a > span {
-    display: none;
 }
 
 .cards .card p {
