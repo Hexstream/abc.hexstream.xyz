@@ -210,9 +210,13 @@ section {
     background-image: url("https://non-free.hexstream.xyz/global.hexstreamsoft.com/images/logos/github.svg");
 }
 
+#account-links #linkedin-link {
+    background-image: url("https://workshop.hexstream.xyz/svg/remakes/linkedin.svg");
+}
+
 #account-links #discord-link {
     background-image: url("https://non-free.hexstream.xyz/global.hexstreamsoft.com/images/logos/discord.svg");
-    background-size: 110%;
+    background-size: 111%;
     background-position: 50% -10%;
 }
 
