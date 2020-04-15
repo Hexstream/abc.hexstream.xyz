@@ -202,12 +202,12 @@ section {
 }
 
 #account-links #twitter-link {
-    background-image: url("https://non-free.hexstream.dev/global.hexstreamsoft.com/images/logos/twitter.svg");
+    background-image: url("https://non-free.hexstream.dev/global.hexstream.dev/images/logos/twitter.svg");
 
 }
 
 #account-links #github-link {
-    background-image: url("https://non-free.hexstream.dev/global.hexstreamsoft.com/images/logos/github.svg");
+    background-image: url("https://non-free.hexstream.dev/global.hexstream.dev/images/logos/github.svg");
 }
 
 #account-links #linkedin-link {
@@ -215,7 +215,7 @@ section {
 }
 
 #account-links #discord-link {
-    background-image: url("https://non-free.hexstream.dev/global.hexstreamsoft.com/images/logos/discord.svg");
+    background-image: url("https://non-free.hexstream.dev/global.hexstream.dev/images/logos/discord.svg");
     background-size: 111%;
     background-position: 50% -10%;
 }
@@ -401,7 +401,7 @@ section {
     /* We can't even display "HexstreamSoft" legibly using the full width, so give up. */
     html {
         background-color: black;
-        background-image: url("https://global.hexstreamsoft.com/css/images/owl-of-disapproval.png");
+        background-image: url("https://global.hexstream.dev/css/images/owl-of-disapproval.png");
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: contain;
