@@ -34,6 +34,21 @@ main section p, main section > * > li {
     font-size: 8vw;
 }
 
+#page-header .description {
+    display: none;
+}
+
+@media (min-width: 23.75em) {
+
+    #page-header .description {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 0.5em;
+        opacity: 0.2;
+    }
+
+}
+
 @media (min-width: 30em) {
     /* The page title can afford to be smaller while still being legible. */
     #page-header h1 {
@@ -338,6 +353,10 @@ section {
        Do not activate this mode if the height is insufficient and the text would thus be rendered illegible. */
     #page-header h1 {
         font-size: 9vh;
+    }
+
+    #page-header .description {
+        display: none;
     }
 
     #realms > a {
