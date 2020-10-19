@@ -180,6 +180,7 @@ section {
     justify-content: center;
     flex-flow: row;
     margin: 1.25vw 0 0;
+    z-index: 4;
 }
 
 #account-links ul {
@@ -207,7 +208,7 @@ section {
     width: 11vw;
     height: 11vw;
     padding: 2.35vw;
-    border: medium solid white; /* Should be transparent, but Chrome 71 is stupid. */
+    border: medium solid transparent;
     border-radius: 1rem;
     text-indent: -1000em;
     background-repeat: no-repeat;
@@ -218,7 +219,6 @@ section {
 
 #account-links #twitter-link {
     background-image: url("https://non-free.hexstream.dev/global.hexstream.dev/images/logos/twitter.svg");
-
 }
 
 #account-links #github-link {
@@ -242,17 +242,18 @@ section {
 
 #account-links .account-name {
     display: none;
+    flex-flow: column;
+    align-items: center;
     position: absolute;
-    left: 100%;
+    top: 100%;
     font-size: 2.5vw;
-    background-color: white;
-    margin-left: 0.5em;
+    background-color: transparent;
+    margin-top: 0.25em;
 }
 
 #account-links .account-link:hover + .account-name, #account-links ul li:target .account-name {
     display: flex;
-    flex-flow: row;
-    align-items: center;
+
 }
 
 #account-links ul li:target .ok {
@@ -261,7 +262,7 @@ section {
 
 #account-links .ok {
     display: none;
-    margin-left: 0.5em;
+    margin-top: 0.25em;
     font-size: smaller;
     border: thin solid black;
     padding: 0.1em 0.2em;
@@ -376,7 +377,7 @@ section {
         bottom: 0;
         font-size: 0.95vh;
         margin-bottom: 1.5vh;
-        z-index: 1;
+        z-index: 5;
         opacity: 0.5;
     }
 
@@ -398,6 +399,20 @@ section {
         width: 16.5vh;
         height: 16.5vh;
         padding: 3.525vh;
+    }
+
+    #account-links .account-name {
+        flex-flow: row;
+        top: initial;
+        left: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0.5em;
+    }
+
+    #account-links .ok {
+        margin-top: 0;
+        margin-left: 0.5em;
     }
 
     #last-updated {
