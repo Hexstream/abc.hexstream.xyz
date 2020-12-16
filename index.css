@@ -90,6 +90,7 @@ main section p, main section > * > li {
     text-align: center;
     display: flex;
     justify-content: center;
+    order: -1;
 }
 
 section {
@@ -443,6 +444,7 @@ section {
         top: 100%;
         bottom: initial;
         justify-content: flex-end;
+        order: initial;
     }
 
 }
