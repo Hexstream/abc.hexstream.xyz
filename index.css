@@ -56,6 +56,18 @@ main section p, main section > * > li {
     }
 }
 
+#top-nav {
+    justify-content: center;
+}
+
+#top-nav > .main {
+    flex: none;
+}
+
+#top-nav + main {
+    margin-top: auto;
+}
+
 #last-updated {
     position: relative;
     align-items: center;
@@ -253,7 +265,6 @@ section {
 
 #account-links .account-link:hover + .account-name, #account-links ul li:target .account-name {
     display: flex;
-
 }
 
 #account-links ul li:target .ok {
@@ -413,6 +424,13 @@ section {
     #account-links .ok {
         margin-top: 0;
         margin-left: 0.5em;
+    }
+
+    #top-nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
     }
 
     #last-updated {
