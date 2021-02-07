@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/hexstream
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://abc.hexstream.xyz
+  * I am hexstream (https://keybase.io/hexstream) on keybase.
+  * I have a public key ASC-t3eUj_e64OreFqPWOxrUQSXcujogNWhBe9WUBpdQCwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01015e2a301ce8442254ec3cc0d56dc7fce8e4d8450194d055020c45bdf46afca91d0a",
+      "host": "keybase.io",
+      "kid": "0120beb777948ff7bae0eade16a3d63b1ad44125dcba3a203568417bd5940697500b0a",
+      "uid": "51845a3fb0d85e71de5c9316efa84f00",
+      "username": "hexstream"
+    },
+    "merkle_root": {
+      "ctime": 1612710152,
+      "hash": "e77e744fe8dee9bacf02e0a0b2c6f73962ca4f0c1fa5841e3bad1962ede5fa9ea3d0ef53f92b8d57ebf9aa25fb45f51bcf982306fa64140847de904851887c02",
+      "hash_meta": "84ab1f927b8093f261a2250f3a6efa8aa53feb74a82e6df7a78ec497c457568e",
+      "seqno": 19038386
+    },
+    "service": {
+      "entropy": "nKTH82k+cJPB49LhyAlmfyfw",
+      "hostname": "abc.hexstream.xyz",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.2"
+  },
+  "ctime": 1612710161,
+  "expire_in": 504576000,
+  "prev": "d4e9e74c60ca5208f7224967781dfeeaa187e23dfd8ddd7440048a98789fcaf1",
+  "seqno": 76,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgvrd3lI/3uuDq3haj1jsa1EEl3Lo6IDVoQXvVlAaXUAsKp3BheWxvYWTESpcCTMQg1OnnTGDKUgj3IklneB3+6qGH4j39jd10QASKmHifyvHEIJzJNqgVotumiwcwUSB7IAGcF0HuIYnZbV9Xe6/otwfKAgHCo3NpZ8RANN0Mq7tP4PbfPWFGKFbRIKNqniUrtHdikEfzODuqUxlJA8rRpeADJZ5m6kopI6BJLJwK8JHzhbtn5igrjW5FAKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIL7g0nWMMHcTD63YfxkGQaf/EST85CV15Hr170Ca3mUuo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/hexstream
+
+==================================================================
