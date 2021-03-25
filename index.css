@@ -4,6 +4,7 @@ html {
     justify-content: stretch;
     min-height: 100%;
     height: initial;
+    line-height: normal;
 }
 
 body {
