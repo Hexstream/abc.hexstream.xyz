@@ -306,7 +306,7 @@ section {
     #realms #HexstreamSoft .description {
         font-size: 3.5em;
         margin-top: 0.3em;
-        line-height: 1.1em;
+        line-height: 1.1;
         margin-bottom: 0.25em;
     }
 
@@ -317,7 +317,7 @@ section {
     }
 
     #realms #Hexstream-Entertainment h1 {
-        line-height: 1.2em;
+        line-height: 1.2;
     }
 
     #realms .cornerable {
@@ -467,7 +467,7 @@ section {
         left: 0;
         right: 0;
         font-size: 20vw;
-        line-height: 1.2em;
+        line-height: 1.2;
         text-align: center;
         font-weight: bold;
         color: red;
