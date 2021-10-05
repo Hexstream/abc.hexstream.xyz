@@ -1,3 +1,24 @@
+.cards .card {
+    scroll-margin-top: 1.7em;
+}
+
+
+.cards .card .domain-name a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cards .card .domain-name a:hover,
+.cards .card .domain-name a:focus {
+    text-decoration: underline;
+}
+
+.cards .card:target > .domain-name {
+    color: green;
+    opacity: 1;
+}
+
+
 .cards .card .github {
     right: 0;
     opacity: 0.2;
@@ -7,13 +28,13 @@
     opacity: 1;
 }
 
-.cards .card .github > a {
+main .github > a {
     display: flex;
     flex-flow: row;
     align-items: stretch;
 }
 
-.cards .card .github > a:before {
+main .github > a:before {
     content: "";
     flex: none;
     position: relative;
@@ -24,11 +45,11 @@
     background-size: contain;
 }
 
-.cards .card .github > a:after {
+main .github > a:after {
     content: "​"; /* Zero width space */
 }
 
-.cards .card .github > a > span {
+main .github > a > span {
     display: none;
 }
 
@@ -51,4 +72,49 @@ br.advisory {
     .cards .card h1 {
         font-size: x-large;
     }
+}
+
+#tarballs\.hexstreamsoft\.com {
+    min-width: 11.75em;
+}
+
+
+main table {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#summary {
+    margin-bottom: 0;
+}
+
+#summary > .scroll {
+    margin-left: calc(-1 * var(--main_padding-left));
+    margin-right: calc(-1 * var(--main_padding-right));
+}
+
+#summary table tbody:not(:first-of-type) {
+    border-top: solid 0.15em gray;
+}
+
+#summary table th.domain {
+    text-align: right;
+}
+
+#summary table th.domain a {
+    color: inherit;
+}
+
+#summary table .ghost {
+    vertical-align: middle;
+    text-align: center;
+    white-space: normal;
+}
+
+#summary table .ghost > a {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 1.4em;
+    transform: rotate(-90deg);
 }
