@@ -6,6 +6,10 @@ table tr > th abbr {
     margin-left: 2em;
 }
 
+table .toggle {
+    text-align: center;
+}
+
 .cards .card {
     max-width: 30em;
 }
