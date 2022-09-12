@@ -10,4 +10,8 @@
     <loc>https://abc.hexstream.xyz/websites/</loc>
   </url>
 
+  <url>
+    <loc>https://abc.hexstream.xyz/repositories/</loc>
+  </url>
+
 </urlset>
