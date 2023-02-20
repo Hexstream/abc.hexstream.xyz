@@ -18,7 +18,7 @@ main .github > a:before {
     flex: none;
     position: relative;
     width: 1em;
-    background-image: url("https://non-free.hexstream.dev/global.hexstream.dev/images/logos/github.svg");
+    background-image: url("https://global.hexstream.dev/non-free/images/logos/github.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;

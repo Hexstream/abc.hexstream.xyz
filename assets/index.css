@@ -230,11 +230,11 @@ section {
 }
 
 #account-links #twitter-link {
-    background-image: url("https://non-free.hexstream.dev/global.hexstream.dev/images/logos/twitter-locked.svg");
+    background-image: url("https://global.hexstream.dev/non-free/images/logos/twitter-locked.svg");
 }
 
 #account-links #github-link {
-    background-image: url("https://non-free.hexstream.dev/global.hexstream.dev/images/logos/github.svg");
+    background-image: url("https://global.hexstream.dev/non-free/images/logos/github.svg");
 }
 
 #account-links #linkedin-link {
@@ -242,7 +242,7 @@ section {
 }
 
 #account-links #discord-link {
-    background-image: url("https://non-free.hexstream.dev/global.hexstream.dev/images/logos/discord.svg");
+    background-image: url("https://global.hexstream.dev/non-free/images/logos/discord.svg");
     background-size: 111%;
     background-position: 50% -10%;
 }
