@@ -460,7 +460,11 @@ section {
         background-size: contain;
     }
 
-    html:after {
+    #top-nav, main, #last-updated {
+        display: none;
+    }
+
+    body:after {
         content: "Y U NO WIDER??";
         position: absolute;
         bottom: 0;
@@ -476,7 +480,4 @@ section {
         background-color: black;
     }
 
-    body {
-        display: none;
-    }
 }
