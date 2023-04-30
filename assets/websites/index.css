@@ -1,3 +1,34 @@
+label[for="show-pages"] {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    padding: 0.25em;
+    margin: 0.5em;
+    background: white;
+    padding: 0.4em 0.6em;
+    border: thin solid black;
+    border-radius: 1em;
+}
+
+label[for="show-pages"]:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#show-pages, #show-pages:not(:checked) ~ section .cards .card .pages {
+    display: none;
+}
+
+#show-pages:checked + label[for="show-pages"] {
+    background: lightgreen;
+}
+
+
+#global {
+    margin-top: 0;
+}
+
 .cards .card .github {
     right: 0;
     opacity: 0.2;
@@ -6,6 +37,82 @@
 .cards .card .github:hover {
     opacity: 1;
 }
+
+
+.cards .card .pages {
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+}
+
+.cards .card .pages .page {
+    margin-top: 0.5em;
+}
+
+.cards .card .pages .page .page {
+    margin-left: 2em;
+}
+
+.cards .card .pages .page > h1 a:hover,
+.cards .card .pages .page > h1 a:focus {
+    text-decoration: underline;
+}
+
+.cards .card .pages .page.subdomain > h1:before {
+    content: "[";
+}
+
+.cards .card .pages .page.subdomain > h1:after {
+    content: "]";
+}
+
+.cards .card .pages details {
+    margin-top: 0.5em;
+}
+
+.cards .card .pages h1,
+.cards .card .pages summary {
+    font-size: large;
+}
+
+.cards .card .pages summary {
+    margin-left: 2em;
+    font-style: italic;
+}
+
+.cards .card .pages .pokehidden-images summary {
+    margin-left: 0;
+}
+
+.cards .card .pages .page summary + article {
+    margin-top: 0.25em;
+}
+
+.cards .card .pages.empty,
+.cards .card .pages.single {
+    font-style: italic;
+}
+
+.cards .card .pages .pokehidden-images > h1 {
+    display: inline;
+}
+
+.cards .card .pages .pokehidden-images details {
+    text-align: center;
+    margin-top: -1.3em;
+}
+
+.cards .card .pages .nsfw-sfw {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: -0.1em;
+}
+
+.cards .card .hoisted.eighteen-plus {
+    right: 0;
+    color: red;
+    opacity: 1;
+}
+
 
 main .github > a {
     display: flex;
@@ -38,17 +145,26 @@ br.advisory {
 }
 
 @media (max-width: 35.25em) {
-    .cards .card h1 {
+    .cards .card > h1 {
         font-size: 5.4vw;
     }
 
     br.advisory {
         display: initial;
     }
+
+    label[for="show-pages"] span {
+        display: none;
+    }
+
+    label[for="show-pages"]:after {
+        content: "🕮";
+    }
+
 }
 
 @media (max-width: 27.5em) {
-    .cards .card h1 {
+    .cards .card > h1 {
         font-size: x-large;
     }
 }
@@ -97,4 +213,8 @@ main .navtable {
     align-items: center;
     width: 1.4em;
     transform: rotate(-90deg);
+}
+
+#footer .back-to-top.right {
+    visibility: hidden;
 }
