@@ -38,6 +38,17 @@ label[for="show-pages"]:hover {
     opacity: 1;
 }
 
+.cards .card .gallery {
+    justify-content: flex-start;
+}
+
+.cards .card .gallery article {
+    flex: 0 1 auto;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 
 .cards .card .pages {
     margin-top: 0.6em;
