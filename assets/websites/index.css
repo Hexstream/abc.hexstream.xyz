@@ -29,6 +29,11 @@ label[for="show-pages"]:hover {
     margin-top: 0;
 }
 
+.cards .card h1 a:hover,
+.cards .card h1 a:focus {
+    text-decoration: underline;
+}
+
 .cards .card .github {
     right: 0;
     opacity: 0.2;
@@ -61,11 +66,6 @@ label[for="show-pages"]:hover {
 
 .cards .card .pages .page .page {
     margin-left: 2em;
-}
-
-.cards .card .pages .page > h1 a:hover,
-.cards .card .pages .page > h1 a:focus {
-    text-decoration: underline;
 }
 
 .cards .card .pages .page.subdomain > h1:before {
