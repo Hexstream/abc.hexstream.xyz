@@ -150,7 +150,7 @@ section {
     background-size: contain;
     background-origin: content-box;
     background-color: transparent;
-    opacity: 0.2;
+    opacity: 0.5;
 }
 
 #realms #all:hover, #realms #all:focus {
