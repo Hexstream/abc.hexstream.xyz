@@ -29,8 +29,7 @@ label[for="show-pages"]:hover {
     margin-top: 0;
 }
 
-.cards .card h1 a:hover,
-.cards .card h1 a:focus {
+.cards .card h1 a:is(:hover, :focus) {
     text-decoration: underline;
 }
 
@@ -80,8 +79,7 @@ label[for="show-pages"]:hover {
     margin-top: 0.5em;
 }
 
-.cards .card .pages h1,
-.cards .card .pages summary {
+.cards .card .pages :is(h1, summary) {
     font-size: large;
 }
 
@@ -98,8 +96,7 @@ label[for="show-pages"]:hover {
     margin-top: 0.25em;
 }
 
-.cards .card .pages.empty,
-.cards .card .pages.single {
+.cards .card .pages:is(.empty, .single) {
     font-style: italic;
 }
 

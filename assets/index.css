@@ -23,7 +23,8 @@ main {
     margin: auto 0;
 }
 
-main section p, main section > * > li {
+main section p,
+main section > * > li {
     overflow-x: initial;
 }
 
@@ -153,7 +154,7 @@ section {
     opacity: 0.5;
 }
 
-#realms #all:hover, #realms #all:focus {
+#realms #all:is(:hover, :focus) {
     background-color: #FFDD99;
     opacity: 1;
 }
@@ -167,7 +168,7 @@ section {
     background-color: #FFCC99;
 }
 
-#realms a:hover, #realms a:focus {
+#realms a:is(:hover, :focus) {
     background: #FFDD99;
     outline-style: none;
 }
@@ -263,7 +264,8 @@ section {
     margin-top: 0.25em;
 }
 
-#account-links .account-link:hover + .account-name, #account-links ul li:target .account-name {
+#account-links .account-link:hover + .account-name,
+#account-links ul li:target .account-name {
     display: flex;
 }
 
