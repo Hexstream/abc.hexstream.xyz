@@ -67,11 +67,11 @@ label[for="show-pages"]:hover {
     margin-left: 2em;
 }
 
-.cards .card .pages .page.subdomain > h1:before {
+.cards .card .pages .page.subdomain > h1::before {
     content: "[";
 }
 
-.cards .card .pages .page.subdomain > h1:after {
+.cards .card .pages .page.subdomain > h1::after {
     content: "]";
 }
 
@@ -128,7 +128,7 @@ main .github > a {
     align-items: stretch;
 }
 
-main .github > a:before {
+main .github > a::before {
     content: "";
     flex: none;
     position: relative;
@@ -139,7 +139,7 @@ main .github > a:before {
     background-size: contain;
 }
 
-main .github > a:after {
+main .github > a::after {
     content: "​"; /* Zero width space */
 }
 
@@ -165,7 +165,7 @@ br.advisory {
         display: none;
     }
 
-    label[for="show-pages"]:after {
+    label[for="show-pages"]::after {
         content: "🕮";
     }
 
