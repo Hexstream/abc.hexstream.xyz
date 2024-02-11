@@ -3,7 +3,7 @@ html {
     flex-flow: column;
     justify-content: stretch;
     min-height: 100%;
-    height: initial;
+    height: revert;
     line-height: normal;
 }
 
@@ -25,7 +25,7 @@ main {
 
 main section p,
 main section > * > li {
-    overflow-x: initial;
+    overflow-x: revert;
 }
 
 #page-header {
@@ -75,17 +75,16 @@ main section > * > li {
     align-items: center;
     order: 1;
     margin: 0.5em 0;
-    opacity: 0.4;
     white-space: nowrap;
     z-index: 3;
 }
 
-#last-updated:hover {
-    opacity: 1;
+#last-updated:where(:not(:hover)) {
+    opacity: 0.4;
 }
 
 #last-updated::after {
-    top: initial;
+    top: revert;
     bottom: 100%;
     left: 0;
     right: 0;
@@ -151,12 +150,14 @@ section {
     background-size: contain;
     background-origin: content-box;
     background-color: transparent;
+}
+
+#realms #all:where(:not(:is(:hover, :focus))) {
     opacity: 0.5;
 }
 
 #realms #all:is(:hover, :focus) {
     background-color: #FFDD99;
-    opacity: 1;
 }
 
 #realms > a {
@@ -201,11 +202,10 @@ section {
     flex-flow: row;
     flex: none;
     margin: 0;
-    opacity: 0.5;
 }
 
-#account-links ul:hover {
-    opacity: 1;
+#account-links ul:where(:not(:hover)) {
+    opacity: 0.5;
 }
 
 #account-links ul li {
@@ -250,7 +250,7 @@ section {
 
 #account-links .account-link:hover {
     background-color: #ECE0A5;
-    border-color: initial;
+    border-color: revert;
 }
 
 #account-links .account-name {
@@ -391,11 +391,10 @@ section {
         font-size: 0.95vh;
         margin-bottom: 1.5vh;
         z-index: 5;
-        opacity: 0.5;
     }
 
-    #realms .cornerable:hover {
-        opacity: 1;
+    #realms .cornerable:where(:not(:hover)) {
+        opacity: 0.5;
     }
 
     #realms #Hexstream-Misc {
@@ -416,7 +415,7 @@ section {
 
     #account-links .account-name {
         flex-flow: row;
-        top: initial;
+        top: revert;
         left: 100%;
         margin-top: 0;
         margin-bottom: 0;
@@ -445,9 +444,9 @@ section {
 
     #last-updated::after {
         top: 100%;
-        bottom: initial;
+        bottom: revert;
         justify-content: flex-end;
-        order: initial;
+        order: revert;
     }
 
 }

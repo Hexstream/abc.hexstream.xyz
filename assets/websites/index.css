@@ -30,16 +30,16 @@ label[for="show-pages"]:hover {
 }
 
 .cards .card h1 a:is(:hover, :focus) {
-    text-decoration: underline;
+    text-decoration: revert;
 }
 
 .cards .card .github {
     right: 0;
-    opacity: 0.2;
+
 }
 
-.cards .card .github:hover {
-    opacity: 1;
+.cards .card .github:where(:not(:hover)) {
+    opacity: 0.2;
 }
 
 .cards .card .gallery {
@@ -118,7 +118,7 @@ label[for="show-pages"]:hover {
 .cards .card .hoisted.eighteen-plus {
     right: 0;
     color: red;
-    opacity: 1;
+    opacity: revert;
 }
 
 
@@ -158,7 +158,7 @@ br.advisory {
     }
 
     br.advisory {
-        display: initial;
+        display: revert;
     }
 
     label[for="show-pages"] span {
