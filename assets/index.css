@@ -170,7 +170,7 @@ section {
 }
 
 #realms a:is(:hover, :focus) {
-    background: #FFDD99;
+    background-color: #FFDD99;
     outline-style: none;
 }
 
