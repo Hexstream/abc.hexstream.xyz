@@ -134,9 +134,6 @@ main .github > a::before {
     position: relative;
     width: 1em;
     background-image: url("https://global.hexstream.dev/non-free/images/logos/github.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
 }
 
 main .github > a::after {

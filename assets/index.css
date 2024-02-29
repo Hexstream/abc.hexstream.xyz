@@ -145,9 +145,6 @@ section {
 #realms #all {
     color: transparent;
     background-image: url("images/globe.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
     background-origin: content-box;
     background-color: transparent;
 }
@@ -224,10 +221,7 @@ section {
     border: medium solid transparent;
     border-radius: 1rem;
     text-indent: -1000em;
-    background-repeat: no-repeat;
     background-origin: content-box;
-    background-position: 50% 50%;
-    background-size: 100%;
 }
 
 #account-links #twitter-link {
@@ -456,9 +450,6 @@ section {
     html {
         background-color: black;
         background-image: url("https://global.hexstream.dev/css/images/owl-of-disapproval.png");
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        background-size: contain;
     }
 
     #top-nav, main, #last-updated {
