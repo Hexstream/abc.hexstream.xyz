@@ -199,7 +199,7 @@ main .navtable {
 }
 
 #summary table th.domain {
-    text-align: right;
+    text-align: end;
 }
 
 #summary table th.domain a {
