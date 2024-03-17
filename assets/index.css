@@ -140,6 +140,7 @@ section {
 
 #realms .cornerable {
     font-size: 0.75vw;
+    white-space: nowrap;
 }
 
 #realms #all {
