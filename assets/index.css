@@ -38,6 +38,7 @@ main section > * > li {
 
 #page-header .description {
     display: none;
+    text-align: center;
 }
 
 @media (min-width: 23.75em) {
@@ -364,7 +365,15 @@ section {
     }
 
     #page-header .description {
-        display: none;
+        position: absolute;
+        left: 1.75vh;
+        top: 1.4rem;
+        bottom: 7.7vh;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        margin-bottom: 0;
+        margin-left: 0.75rem;
+        font-size: 4.5vh;
     }
 
     #realms > a {
