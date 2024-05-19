@@ -200,7 +200,6 @@ section {
     display: flex;
     flex-flow: row;
     flex: none;
-    margin: 0;
 }
 
 #account-links ul:where(:not(:hover)) {
@@ -212,7 +211,6 @@ section {
     display: flex;
     flex-flow: row;
     align-items: center;
-    margin: 0;
 }
 
 #account-links .account-link {
