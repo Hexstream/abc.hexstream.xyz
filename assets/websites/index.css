@@ -192,6 +192,15 @@ main .navtable {
 #summary > .scroll {
     margin-left: calc(-1 * var(--main_padding-left));
     margin-right: calc(-1 * var(--main_padding-right));
+    margin-bottom: 0;
+}
+
+#summary table {
+    margin-bottom: 2.5em;
+}
+
+main {
+    margin-bottom: 0.65em;
 }
 
 #summary table tbody:not(:first-of-type) {
