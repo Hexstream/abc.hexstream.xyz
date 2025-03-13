@@ -1,30 +1,3 @@
-label[for="show-pages"] {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    padding: 0.25em;
-    margin: 0.5em;
-    background-color: white;
-    padding: 0.4em 0.6em;
-    border: thin solid black;
-    border-radius: 1em;
-}
-
-label[for="show-pages"]:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-#show-pages, #show-pages:not(:checked) ~ section .cards .card .pages {
-    display: none;
-}
-
-#show-pages:checked + label[for="show-pages"] {
-    background-color: lightgreen;
-}
-
-
 #global {
     margin-top: 0;
 }
@@ -53,6 +26,20 @@ label[for="show-pages"]:hover {
     padding-right: 0;
 }
 
+
+html:has(#show-pages:not(:checked)) .cards .card .pages {
+    display: none;
+}
+
+@media (max-width: 35.25em) {
+    label[for="show-pages"] span {
+        display: none;
+    }
+
+    label[for="show-pages"]::after {
+        content: "🕮";
+    }
+}
 
 .cards .card .pages {
     margin-top: 0.6em;
@@ -157,15 +144,6 @@ br.advisory {
     br.advisory {
         display: revert;
     }
-
-    label[for="show-pages"] span {
-        display: none;
-    }
-
-    label[for="show-pages"]::after {
-        content: "🕮";
-    }
-
 }
 
 @media (max-width: 27.5em) {
@@ -227,8 +205,4 @@ main {
     align-items: center;
     width: 1.4em;
     transform: rotate(-90deg);
-}
-
-#footer .back-to-top.right {
-    visibility: hidden;
 }

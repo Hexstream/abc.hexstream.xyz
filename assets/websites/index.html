@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="https://global.hexstream.dev/css/table-ghost.css" />
     <link rel="stylesheet" type="text/css" href="https://global.hexstream.dev/css/navtable.css" />
     <link rel="stylesheet" type="text/css" href="https://global.hexstream.dev/css/cards.css" />
+    <link rel="stylesheet" type="text/css" href="https://global.hexstream.dev/css/button-control.css" />
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="preload" as="font" type="font/woff2" href="https://global.hexstream.dev/fonts/kaushan-script/KaushanScript-Regular.woff2" crossorigin />
     <link rel="preload" as="font" type="font/woff2" href="https://global.hexstream.dev/fonts/liberation/LiberationSerif-Regular.woff2" crossorigin />
@@ -75,8 +76,12 @@
         </ul>
       </nav>
 
-      <input type="checkbox" id="show-pages" />
-      <label for="show-pages"><span>Show pages</span></label>
+      <div id="page-options">
+        <span class="button-control">
+          <input type="checkbox" id="show-pages" />
+          <label for="show-pages"><span>Show pages</span></label>
+        </span>
+      </div>
 
       <section id="global">
 
@@ -1152,7 +1157,7 @@
 
           <article class="card" id="modern.pokehidden.archive.hexstream.net">
             <h1><a href="https://modern.pokehidden.archive.hexstream.net/" target="_blank">Modern Pokéhidden Archive</a></h1>
-            <p class="hoisted domain-name self-link"><a href="#modern.pokehidden.archive.hexstream.net">modern.pokehidden.archive.hexstream.net</a></p>
+            <p class="hoisted domain-name self-link"><a href="#modern.pokehidden.archive.hexstream.net">modern.<wbr />pokehidden.archive.hexstream.net</a></p>
             <p class="hoisted eighteen-plus">(18+)</p>
             <p class="description">A complement to the Pokéhidden Archive, featuring HD galleries.</p>
             <div class="gallery">
