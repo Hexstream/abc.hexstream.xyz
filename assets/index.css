@@ -202,7 +202,7 @@ section {
     flex: none;
 }
 
-#account-links ul:where(:not(:hover)) {
+#account-links ul:where(:not(:hover, :has(:target))) {
     opacity: 0.5;
 }
 
@@ -242,7 +242,8 @@ section {
     background-position: 50% -10%;
 }
 
-#account-links .account-link:hover {
+#account-links .account-link:hover,
+#account-links > ul > li:target > .account-link {
     background-color: #ECE0A5;
     border-color: revert;
 }
@@ -255,8 +256,8 @@ section {
     top: 100%;
     width: 100%;
     font-size: 2.5vw;
-    background-color: transparent;
     margin-top: 0.25em;
+    background-color: transparent;
 }
 
 #account-links .account-link:hover + .account-name,
