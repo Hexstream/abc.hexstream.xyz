@@ -202,7 +202,8 @@ section {
     flex: none;
 }
 
-#account-links ul:where(:not(:hover, :has(:target))) {
+#account-links ul:where(:not(:has(:target), :hover)),
+#account-links ul:where(:has(:target):is(:not(:hover), :has(.account-name:hover))) li:not(:target) {
     opacity: 0.5;
 }
 
